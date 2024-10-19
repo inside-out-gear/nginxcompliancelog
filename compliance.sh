@@ -2,8 +2,8 @@
 
 # Define the log file and output file paths
 LOG_FILE="/var/log/nginx/access.log"
-IP_LOG_FILE="/appdata/compliance/reports/ip_log_$(date +%Y-%m-%d).csv"
-REPEATED_IP_REPORT="/appdata/compliance/reports/repeated_ip_log_$(date +%Y-%m-%d).csv"
+IP_LOG_FILE="/path/to/reports/ip_log_$(date +%Y-%m-%d).csv"
+REPEATED_IP_REPORT="/path/to/reports/repeated_ip_log_$(date +%Y-%m-%d).csv"
 
 # Create CSV headers for the IP log
 echo "IP Address,Date (UTC),Country" > $IP_LOG_FILE
